@@ -33,7 +33,7 @@ if submit_button:
     input_data = np.array([[hours_coding, coffee_intake_mg, sleep_hours, commits,
                             bugs_reported, ai_usage_hours, cognitive_load]])
     prediction = model.predict(input_data)
-    st.success(f"if prediction is positive shows as 1 and if negative shows as 0 so , Predicted as: positive")
+    st.success(f"if prediction is positive shows as 1 and if negative shows as 0 so , Predicted as:{prediction[0]}")
     
   
  
